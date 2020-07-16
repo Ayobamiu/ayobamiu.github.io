@@ -32,12 +32,11 @@ button {
 
 .container {
   display: block;
-  width: 400px;
-  margin: 100px auto 0;
+  width: 100%;
+  margin: 10px;
   box-sizing: border-box;
 }
 .clear-all {
-  /* position: relative; */
   margin-left: 60px;
   text-align: center;
 }
