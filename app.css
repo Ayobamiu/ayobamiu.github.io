@@ -1,52 +1,93 @@
 * {
-  box-sizing: border-box;
+  font-size: 20px;
 }
 body {
-  background: #fff;
-  color: #333;
-  font-family: Lato, sans-serif;
-}
-h3 {
-  margin-left: 60px;
-}
-
-ul {
+  font: 20px/1.5 Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  list-style-type: none;
-}
-ul li {
-  position: relative;
-  padding: 12px 8px 12px 40px;
-}
-
-.fa {
-  position: relative;
-  right: 0;
-  top: 0;
-  margin: 10px;
-}
-button {
-  color: lightgreen;
+  background-color: #f4f4f4;
 }
 
 .container {
-  display: block;
-  width: 100%;
-  margin: 10px;
-  box-sizing: border-box;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
-.clear-all {
-  margin-left: 60px;
+header {
+  min-height: 20px;
+  border-bottom: black 3px solid;
+}
+header h1 {
   text-align: center;
+  font-size: 40px;
 }
-#todo-done{
-    color: lightgreen;
+ul {
+  margin: 0;
+  padding: 0;
+}
+article#main-col {
+  float: left;
+  width: 65%;
+  margin: 15px;
+}
+ul#todos li {
+  list-style: none;
+  padding: 10px;
+  border: #cccccc solid 1px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  background: #e6e6e6;
+}
+input {
+  width: 85%;
+  height: 30px;
+  margin: 15px 0;
+  border: #cccccc solid 1px;
+  border-radius: 10px;
 }
 
-#edit{
-    color: lightblue;
+button {
+  height: 40px;
+  width: auto;
+  border: #cccccc solid 1px;
+  border-radius: 10px;
 }
-#delete{
-    color: red;
+
+button#clear-all {
+  text-align: center;
+  justify-items: center;
+  margin-left: 40%;
+}
+
+li {
+  display: block;
+  min-height: 25px;
+}
+li span {
+  display: inline;
+}
+i {
+  display: inline;
+  float: right;
+  margin: 0 5px;
+}
+#todo-done {
+  color: lightgreen;
+}
+
+#edit {
+  color: lightblue;
+}
+#delete {
+  color: red;
+}
+
+@media (max-width: 880px) {
+  button {
+    margin-bottom: 10px;
+    margin-left: 35%;
+  }
+  input {
+    margin: 10px 20px;
+  }
 }
